@@ -29,24 +29,7 @@ h1.logo {
     background-color: transparent;
     
 }
-a:active{
-    color: #191970;
-}
-a:link{
-  color: #191970;
-}
-a:visited{
-  color:#191970;
-}
-a:hover{
-  color:#191970;
-}
-a:focus{
-  color:#191970;
-}
-a:active{
-  color:#191970;
-}
+
 /* changed this from the tutorial video to
    allow it to gain focus, making it tabbable */
 .nav-toggle {
