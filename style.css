@@ -15,8 +15,6 @@ body {
 	font-weight: 400;
 }
 
-
-
 /* navigation styles start here */
 
 header {
@@ -120,7 +118,7 @@ nav li {
 }
 
 nav a {
-  color: 	;
+  color: #191970;;
   text-decoration: none;
   font-size: 1.2rem;
   text-transform: uppercase;
