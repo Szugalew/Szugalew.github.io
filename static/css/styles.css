@@ -2007,6 +2007,10 @@ ul.work-list li {
 /*-----------------------------------------
 * Contact Us
 -----------------------------------------*/
+.emailFakeEntry{
+    display: none;
+}
+
 .form-group {
     position: relative;
     width: 100%;
