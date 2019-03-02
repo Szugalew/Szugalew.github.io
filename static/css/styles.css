@@ -134,6 +134,20 @@ img {
   background: #f7f6ff;
 }
 
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.Compcolumn {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.Comprow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /*---------------------------------
 * 03. Section title
 -----------------------------------*/
@@ -1751,7 +1765,7 @@ div#particles-box {
   color: #fff;
   background: #333;
 }
-/*
+/*jkji*/
 ul.work-list li {
 	cursor: pointer;
 	display: inline-block;
@@ -1767,7 +1781,7 @@ ul.work-list li {
 	margin-right: 5px;
     margin-bottom: 10px;
 }
-*/
+/*kjlkjk*/
 .portfolio-content {
   margin: 0 -15px;
 }
