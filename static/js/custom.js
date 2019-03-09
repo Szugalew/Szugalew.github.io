@@ -139,6 +139,11 @@ Copyright (c) 2018 - mital_04
           $(portfolioFilter).on( 'click', function() {
             $(this).addClass('active').siblings().removeClass('active');
           });
+        /*idkkdk*/
+         $(portfolioFilter).on( 'load', function() {
+            $(this).addClass('active').siblings().removeClass('active');
+          });
+        /*djsijsiajd*/
     }
 
     
