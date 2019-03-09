@@ -239,7 +239,6 @@ Copyright (c) 2018 - mital_04
     });
 
     $(document).on("ready", function(){
-        KEIRA.MasoNry(),
         KEIRA.ClientSlider(),
         KEIRA.MenuClose(),
         KEIRA.MenuClose01(),
@@ -249,7 +248,8 @@ Copyright (c) 2018 - mital_04
         KEIRA.HeaderScroll(),
         KEIRA.PopupVideo(),
         KEIRA.LightboxGallery(),
-        KEIRA.mTypeIt();
+        KEIRA.mTypeIt(),
+        KEIRA.MasoNry();
     });
 
     $(window).on("scroll", function(){
