@@ -132,6 +132,7 @@ Copyright (c) 2018 - mital_04
           });
         /*idkkdk*/
          $(portfolioFilter).on( 'load', function() {
+            portfolioWork.isotope({ filter: "*" });
             portfolioWork.isotope({ filter: '*' });
           });
         /*djsijsiajd*/
@@ -141,6 +142,7 @@ Copyright (c) 2018 - mital_04
           });
         /*idkkdk*/
          $(portfolioFilter).on( 'load', function() {
+            portfolioWork.isotope({ filter: "*" });
             $(this).addClass('active').siblings().removeClass('active');
           });
         /*djsijsiajd*/
