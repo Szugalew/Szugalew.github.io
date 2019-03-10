@@ -130,24 +130,15 @@ Copyright (c) 2018 - mital_04
             var filterValue = $(this).attr('data-filter');
             portfolioWork.isotope({ filter: filterValue });
           });
-        /*idkkdk*/
-         $(portfolioFilter).on( 'load', function() {
-            portfolioWork.isotope({ filter: "*" });
-            portfolioWork.isotope({ filter: '*' });
-          });
-        /*djsijsiajd*/
           //Add/remove class on filter list
           $(portfolioFilter).on( 'click', function() {
             $(this).addClass('active').siblings().removeClass('active');
           });
-        /*idkkdk*/
-         $(portfolioFilter).on( 'load', function() {
-            portfolioWork.isotope({ filter: "*" });
-            $(this).addClass('active').siblings().removeClass('active');
-          });
-        /*djsijsiajd*/
+		portfolioWork.imagesLoaded().progress( function() {
+  $(portfolioWork).isotope('layout');
+});
     }
-
+    
     
     /*--------------------
     * owl Slider
@@ -243,6 +234,7 @@ Copyright (c) 2018 - mital_04
     // Window on Load
     $(window).on("load", function(){
       KEIRA.WebLoad();
+		
     });
 
     $(document).on("ready", function(){
