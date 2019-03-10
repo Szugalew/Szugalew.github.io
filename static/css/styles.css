@@ -1795,9 +1795,12 @@ ul.work-list li {
 
 .portfolio-cols-3 { margin: 0; padding: 0;
 height: 100%; width: 100%; }
+
 .portfolio-cols-3 .portfolio-item { 
   width: 33.33%; 
   list-style-type: none; 
+	height: auto;
+	padding: 10px;
 }
 
 @media(max-width: 991px) {
