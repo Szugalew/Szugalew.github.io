@@ -137,6 +137,8 @@ Copyright (c) 2018 - mital_04
 		portfolioWork.imagesLoaded().progress( function() {
   $(portfolioWork).isotope('layout');
 });
+		
+  $(portfolioWork).isotope({filter: "*"});
     }
     
     
@@ -236,7 +238,14 @@ Copyright (c) 2018 - mital_04
       KEIRA.WebLoad();
 		
     });
-
+	$(window).on("load", function(){
+		setTimeout(fixPort, 1000);
+	});
+	
+	function fixPort(){
+		var portfolioWork = $('.portfolio-content');
+		$(portfolioWork).isotope({filter: "*"});
+	}
     $(document).on("ready", function(){
         KEIRA.ClientSlider(),
         KEIRA.MenuClose(),
