@@ -131,7 +131,7 @@ img {
 }
 
 .gray-bg {
-  background: #f7f6ff;
+  background: #f4f4f5;
 }
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
@@ -421,7 +421,10 @@ img {
   } 
 }
 
-
+.boxHeaderLogo{
+	height: 75px;
+	width: 300px;
+}
 /*-----------------------------------------
 * 04. Header
 -----------------------------------------*/
@@ -926,7 +929,7 @@ img {
 }
 
 .home-banner {
-  background: #c8ced7;
+  background: #f4f5f7;
 }
 
 .home-banner h4{
@@ -1098,6 +1101,17 @@ div#particles-box {
   }
 }
 
+
+.home-banner-02 h4{
+  color: #fff;
+}
+
+.home-banner-02 h5 {
+  color: #fff;
+}
+.home-banner-02 p{
+  color: #fff;
+}
 
 /*-----------------------------------------
 *  About Us
@@ -1792,26 +1806,27 @@ ul.work-list li {
   margin: 0 -15px;
 }
 */
-
-.portfolio-cols-3 { margin: 0; padding: 0;
-height: 100%; width: 100%; }
+/*added height: 100%; width: 100%*/
+.portfolio-cols-3 { margin: 0; padding: 0; height: 100%; width: 100% ; }
 
 .portfolio-cols-3 .portfolio-item { 
   width: 33.33%; 
   list-style-type: none;
 	height:auto;
-	padding: 10px;
-	position: relative;
+	padding: 2px;
+	position:relative;
 }
 
 @media(max-width: 991px) {
   .portfolio-cols-3 .portfolio-item {
     width: 50%;
+	  height: auto;
   }
 }
 @media(max-width: 767px) {
   .portfolio-cols-3 .portfolio-item {
     width: 100%;
+	  height: auto;
   }
 }
 
