@@ -5,7 +5,9 @@
   transition: top .8s; /* Transition effect when sliding down (and up) */
 }
 
-
+.boxHeaderLogo{
+max-width:270px;
+}
 
 /* Set a background color */
 .timelinebody {
