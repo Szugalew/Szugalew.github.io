@@ -65,6 +65,7 @@ Copyright (c) 2018 - mital_04
     /*--------------------
         * Header Fixed
     ----------------------*/
+/*
     KEIRA.HeaderFixed = function(){
         if ($(window).scrollTop() >= 60) {
            $('.navbar').addClass('fixed-header');
@@ -73,8 +74,8 @@ Copyright (c) 2018 - mital_04
            $('.navbar').removeClass('fixed-header');
         }
     }    
-
-    /*--------------------
+  */
+	/*--------------------
         * Progress Bar 
     ----------------------*/
     KEIRA.ProgressBar = function(){
@@ -265,5 +266,19 @@ Copyright (c) 2018 - mital_04
         KEIRA.ProgressBar(),
         KEIRA.HeaderFixed();
     });
+	
+	/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-100px";
+	 $('.navbar-collapse').collapse('hide');
+  }
+  prevScrollpos = currentScrollPos;
+}
 
 })(jQuery);
+
