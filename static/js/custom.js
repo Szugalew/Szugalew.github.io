@@ -65,7 +65,7 @@ Copyright (c) 2018 - mital_04
     /*--------------------
         * Header Fixed
     ----------------------*/
-/*
+
     KEIRA.HeaderFixed = function(){
         if ($(window).scrollTop() >= 60) {
            $('.navbar').addClass('fixed-header');
@@ -74,7 +74,7 @@ Copyright (c) 2018 - mital_04
            $('.navbar').removeClass('fixed-header');
         }
     }    
-  */
+  
 	/*--------------------
         * Progress Bar 
     ----------------------*/
