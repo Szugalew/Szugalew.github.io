@@ -7,7 +7,7 @@
 
 /* Set a background color */
 .timelinebody {
-  background-color: #474e5d;
+  background-color: oldlace;
   font-family: Helvetica, sans-serif;
 }
 
@@ -23,7 +23,7 @@
   content: '';
   position: absolute;
   width: 6px;
-  background-color: white;
+  background-color: darkgray;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -44,7 +44,7 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  right: -17px;
+  right: -13px;
   background-color: white;
   border: 4px solid #FF9F55;
   top: 15px;
@@ -92,7 +92,7 @@
 
 /* Fix the circle for containers on the right side */
 .right::after {
-  left: -16px;
+  left: -14px;
 }
 
 /* The actual content */
@@ -127,7 +127,7 @@
 
 /* Make sure all circles are at the same spot */
   .left::after, .right::after {
-    left: 15px;
+    left: 18px;
   }
 
 /* Make all right containers behave like the left ones */
