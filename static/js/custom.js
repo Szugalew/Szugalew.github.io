@@ -215,7 +215,7 @@
             speed: 200,
             loop:true,
             strings: [
-              '16 year old',
+              '17 year old',
               'AI and ML Researcher',
             'AR Developer'
             ],
