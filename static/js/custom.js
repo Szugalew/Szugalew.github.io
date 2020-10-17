@@ -7,6 +7,8 @@
       * Pre Load
     ----------------------*/
     KEIRA.WebLoad = function(){
+      var portfolioWork = $('.portfolio-content');
+		$(portfolioWork).isotope({filter: "*"});
       document.getElementById("loading").style.display = "none"; 
     }
 
