@@ -217,8 +217,8 @@
             speed: 200,
             loop:true,
             strings: [
-              '17 year old',
-              'AI and ML Researcher',
+              'Computer Science Student',
+              'Mobile Developer',
             'AR Developer'
             ],
             breakLines: false
