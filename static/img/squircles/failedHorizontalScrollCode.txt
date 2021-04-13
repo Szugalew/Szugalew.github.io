@@ -1,0 +1,306 @@
+################ first attempt failed
+
+###### html
+
+<div class="horscroll-height-adjust">
+        <div class="horscrollcontainer">
+            <div id="horscrollid" class="horscroll">
+                <div>
+                    <img class="horscroll-img" src="static/img/squircles/V2squircle_playstore_1.png">
+                </div>
+                <div>
+                    <img class="horscroll-img" src="static/img/squircles/V2squircle_playstore_2.png">
+                </div>
+                <div>
+                    <img class="horscroll-img" src="static/img/squircles/V2squircle_playstore_3.png">
+                </div>
+                <div>
+                    <img class="horscroll-img" src="static/img/squircles/V2squircle_playstore_4.png">
+                </div>
+                <div>
+                    <img class="horscroll-img" src="static/img/squircles/V2squircle_playstore_5.png">
+                </div>
+                <div>
+                    <img class="horscroll-img" src="static/img/squircles/V2squircle_playstore_6.png">
+                </div>
+                <div>
+                    <img class="horscroll-img" src="static/img/squircles/V2squircle_playstore_7.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="theafter" style="height: 9000px;">
+        <div class="top-bar">
+            <div class="top-bar-row">
+                <a style="display: flex;" href="squircles.html">
+                    <img class="top-bar-icon" src="static/img/squircles/icon.png">
+                    <p class="top-bar-text">Friendship Squircles</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+###### javascript
+
+let thing = document.querySelector(".horscroll");
+
+let thing_parent = document.querySelector(".horscrollcontainer");
+// Get the navbar
+var hors = document.getElementById("horscrollid");
+
+// Get the offset position of the navbar
+var pos = thing.offsetTop;
+
+window.addEventListener("scroll", function() {
+    doMoveScroll()
+  })
+
+  function reportWindowSize() {
+    thing_parent.classList.remove("stickyscroll");
+    thing = document.querySelector(".horscroll");
+// Get the navbar
+     hors = document.getElementById("horscrollid");
+
+// Get the offset position of the navbar
+     pos = thing.offsetTop;
+     doMoveScroll();
+  }
+  window.onresize = reportWindowSize;
+
+
+  function doMoveScroll() {
+    theafter = document.querySelector(".theafter");
+
+    if (window.pageYOffset  >= pos) {
+        thing_parent.classList.add("stickyscroll")
+        
+    let pageY = window.pageYOffset;
+    let targetDis = theafter.offsetTop;
+    //let thing = document.querySelector(".horscroll");
+    //var distance  = $('.horscroll').offset().top;
+    //var distance = thing.offset().top;
+    thing.style.left = -((thing.clientWidth-1000)*(pageY - pos)/(targetDis - pos)) + 'px';
+    //thing.style.top = (pageY - pos) + 'px';
+    } else {
+        thing_parent.classList.remove("stickyscroll");
+    }
+    //thing.scrollTop(pageY);
+    //thing.scrollLeft(pageY);
+  }
+
+###### css
+
+/* height and width are switched */
+  .horizontal-scroll{
+      position: relative;
+      left: 100px;
+    display: block;
+    width: 200px;
+    max-height: 1000px;
+  overflow-y:visible;
+  overflow-x: hidden;
+    margin: 0;
+    transform: rotate(-90deg) translateY(-200px);
+    transform-origin: right top;
+  }
+  .horscroll-height-adjust {
+    height: 4000px;
+    overflow-x: hidden;
+    padding: 0px;
+    background: rgb(197, 197, 197);
+    }
+  .horscrollcontainer {
+      height: 1000px;
+      max-width: 1000px; 
+      overflow-x: hidden;
+      padding: 0px;
+      margin: auto;
+      background: rgb(197, 197, 197);
+  }
+  .horscroll {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    display: block;
+    overflow-y: visible;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: calc(7*0.8*80vh);
+    height: 90vh;
+  }
+  
+  .horscroll> div {
+    display: inline-block;
+    padding: 10px;
+  }
+  .horscroll-img {
+      height: 80vh;
+      border-radius: 40px;
+  }
+.stickyscroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+
+
+############################## attempt 2 works but lags or glitches on scroll sometimes
+
+###### html
+
+<div class="horscroll-height-adjust">
+        <div class="horscrollcontainer">
+            <div id="horscrollid" class="horscroll">
+                <div>
+                    <img class="horscroll-img" src="static/img/squircles/V2squircle_playstore_1.png">
+                </div>
+                <div>
+                    <img class="horscroll-img" src="static/img/squircles/V2squircle_playstore_2.png">
+                </div>
+                <div>
+                    <img class="horscroll-img" src="static/img/squircles/V2squircle_playstore_3.png">
+                </div>
+                <div>
+                    <img class="horscroll-img" src="static/img/squircles/V2squircle_playstore_4.png">
+                </div>
+                <div>
+                    <img class="horscroll-img" src="static/img/squircles/V2squircle_playstore_5.png">
+                </div>
+                <div>
+                    <img class="horscroll-img" src="static/img/squircles/V2squircle_playstore_6.png">
+                </div>
+                <div>
+                    <img class="horscroll-img" src="static/img/squircles/V2squircle_playstore_7.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="theafter">
+        <div class="top-bar">
+            <div class="top-bar-row">
+                <a style="display: flex;" href="squircles.html">
+                    <img class="top-bar-icon" src="static/img/squircles/icon.png">
+                    <p class="top-bar-text">Friendship Squircles</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+###### javascript
+
+let thing = document.querySelector(".horscroll");
+
+let thing_parent = document.querySelector(".horscrollcontainer");
+// Get the navbar
+var hors = document.getElementById("horscrollid");
+
+var theafter = document.querySelector(".theafter");
+
+// Get the offset position of the navbar
+var pos = thing.offsetTop;
+
+window.addEventListener("scroll", function() {
+    doMoveScroll()
+  })
+
+  function reportWindowSize() {
+    theafter = document.querySelector(".theafter");
+    thing_parent.classList.remove("stickyscroll");
+    thing = document.querySelector(".horscroll");
+// Get the navbar
+     hors = document.getElementById("horscrollid");
+
+// Get the offset position of the navbar
+     pos = thing.offsetTop;
+     doMoveScroll();
+  }
+  window.onresize = reportWindowSize;
+
+
+  function doMoveScroll() {
+    if (window.pageYOffset  >= pos) {
+        thing_parent.classList.add("stickyscroll")
+        
+    let pageY = window.pageYOffset;
+    let targetDis = theafter.offsetTop;
+    //let thing = document.querySelector(".horscroll");
+    //var distance  = $('.horscroll').offset().top;
+    //var distance = thing.offset().top;
+    //thing.style.left = -((thing.clientWidth-1000)*(pageY - pos)/(targetDis - pos)) + 'px';
+    var end_offset = window.innerWidth;
+    if (end_offset > 1000) {
+        end_offset = 1000;
+    }
+    thing.style.transform = `translateX(${-(thing.clientWidth - end_offset)*(window.pageYOffset - pos)/(targetDis - window.innerHeight - pos)}px)`;
+    thing.style.transform += `translateY(${(pageY-pos)}px)`;
+    } else {
+        thing_parent.classList.remove("stickyscroll");
+    }
+    if (window.pageYOffset  >= targetDis - window.innerHeight) {
+        thing.style.transform = `translateX(${-(thing.clientWidth-900)}px)`;
+
+    }
+    //thing.scrollTop(pageY);
+    //thing.scrollLeft(pageY);
+  }
+
+###### css
+
+/* height and width are switched */
+  .horizontal-scroll{
+      position: relative;
+      left: 100px;
+    display: block;
+    width: 200px;
+    max-height: 1000px;
+  overflow-y:visible;
+  overflow-x: hidden;
+    margin: 0;
+    transform: rotate(-90deg) translateY(-200px);
+    transform-origin: right top;
+  }
+  .horscroll-height-adjust {
+    height: 4000px;
+    overflow-x: visible;
+    padding: 0px;
+    background: rgb(197, 197, 197);
+    }
+  .horscrollcontainer {
+      height: 4000px;
+      max-width: 1000px; 
+      overflow-x: visible;
+      overflow-y: hidden;
+      padding: 0px;
+      margin: auto;
+      background: rgb(197, 197, 197);
+  }
+  .horscroll {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    display: block;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: calc(7*0.8*80vh);
+    height: 90vh;
+  }
+  
+  .horscroll> div {
+    display: inline-block;
+    padding: 10px;
+  }
+  .horscroll-img {
+      height: 80vh;
+      margin-top: 30px;
+      border-radius: 40px;
+  }
+.stickyscroll {
+}
