@@ -180,12 +180,14 @@ a {
 
   .screenshot-section {
     background: #ffffff;
+    height: max-content;
   }
   
   .hs-container-before {
     padding-top: 20px;
+    padding-bottom: 5px;
     margin-bottom: -10px;
-    height: min-content;
+    height: max-content;
     background: #ffffff;
   }
 
