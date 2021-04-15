@@ -121,12 +121,12 @@ a {
 
   .video-box-parent {
     position: relative;
-    margin: auto; 
-    display:block; 
     width: 100%; 
     max-width: 800px; 
-    height: 350px; 
     padding: 0px;
+    padding-top: 56.25%;
+    margin: 0px;
+    height: auto;
     border-radius: 20px;
   }
   .video-box {
