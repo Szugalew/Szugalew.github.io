@@ -97,7 +97,7 @@ a {
     display: flex;
     margin: auto;
   }
-/* Create two equal columns that floats next to each other */
+/* Create two columns that floats next to each other */
 .col-1 {
     flex-grow: 1;
     padding-left: 40px;
@@ -118,6 +118,26 @@ a {
     display: table;
     clear: both;
   }
+
+  .video-box-parent {
+    position: relative;
+    margin: auto; 
+    display:block; 
+    width: 100%; 
+    max-width: 800px; 
+    height: 350px; 
+    padding: 0px;
+    border-radius: 20px;
+  }
+  .video-box {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+  }
+  
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 800px) {
@@ -270,4 +290,44 @@ a {
   font-weight: 300;
   font-family: Helvetica, sans-serif;
   text-align: center;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 500px) {
+  .video-box-parent {
+    position: relative;
+    padding-top: 56.25%;
+    margin: 0;
+    height: auto;
+  }
+  .video-box {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+  }
+  .card {
+    background-color:rgb(255, 255, 255);
+    margin: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    width: auto;
+    border-radius: 40px;
+    box-shadow: 
+    4px 4px 4px 4px rgba(0, 0, 0, 0.05), 6px 6px 20px 6px rgba(0, 0, 0, 0.05);
+  }
+  .col-2-v2 {
+    padding: 0px;
+    padding-bottom: 80px;
+    flex: 0 0 0px;
+  }
+  .hs {
+    overflow-x: scroll;
+    scroll-snap-type: none;
+  }
 }
