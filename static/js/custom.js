@@ -221,8 +221,9 @@
       loop: true,
       strings: [
         'Computer Science Student',
-        'Mobile Developer',
-        'AR Developer'
+        'Flutter Developer',
+        'Android Native Developer',
+        'Web Developer'
       ],
       breakLines: false
     });
