@@ -17,13 +17,16 @@
   <!-- / -->
 
   <!-- Plugin CSS -->
-  <link href="static/plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/plugin/bootstrap/css/bootstrap.css" rel="stylesheet">
   <link href="static/plugin/owl-carousel/css/owl.carousel.min.css" rel="stylesheet">
   <link href="static/plugin/magnific/magnific-popup.css" rel="stylesheet">
   <!-- / -->
 
   <!-- Theme Style -->
   <link href="static/css/styles.css" rel="stylesheet">
+  <link href="static/css/styles2.css" rel="stylesheet">
+  <link href="static/css/styles_work.css" rel="stylesheet">
+  <link href="static/css/styles_portfolio.css" rel="stylesheet">
   <link href="static/css/color/color-3.css" rel="stylesheet" id="color_theme">
   <!-- / -->
 
@@ -37,50 +40,16 @@
 <!-- Body Start -->
 
 <body data-spy="scroll" data-target="#navbarKeira" data-offset="98">
-
-  <!-- Loader 
-  <div id="loading">
-    <div class="load-circle"><span class="one"></span></div>
-  </div>
-    Loader End -->
-
-  <div class="hidden">
-    <!--
-	<script type="text/javascript">
-			var images = new Array()
-			function preload() {
-				for (i = 0; i < preload.arguments.length; i++) {
-					images[i] = new Image()
-					images[i].src = preload.arguments[i]
-				}
-			}
-			preload(
-				
-				"static/img/MLArticle.PNG",
-				"static/img/blockTowerInGameImage.png",
-				"static/img/towerarInGameImage.png",
-				"static/img/Walmart%20Challenge%20Slide%20Deck%201st%20Draft.png",
-				"static/img/transferlearning.png",
-				"static/img/AIdna1.png",
-				"static/img/geneticalgorithmgif.gif",
-				"static/img/breastcancer.jpg",
-				"static/img/howimusingaitohelptheblindvideoimage.png",
-				"static/img/arWhyImportant.png"
-			)
-		-->
-    </script>
-  </div>
-
   <!-- Header -->
   <header>
     <nav class="navbar header-nav-01 fixed-top navbar-expand-lg">
       <div class="container-fluid">
         <!-- Brand -->
-        <a class="navbar-brand" href="#">Mikhail <span class="theme-bg"></span></a>
+        <a class="navbar-brand" href="#">Mikhail</a>
         <!-- / -->
 
         <!-- Mobile Toggle -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarKeira"
+        <button class="navbar-toggler nav-highlight" type="button" data-toggle="collapse" data-target="#navbarKeira"
           aria-controls="navbarKeira" aria-expanded="false" aria-label="Toggle navigation">
           <span></span>
           <span></span>
@@ -90,13 +59,19 @@
 
         <!-- Top Menu -->
         <div class="collapse navbar-collapse justify-content-end" id="navbarKeira">
-          <ul class="navbar-nav m-auto">
-            <li><a class="nav-link active" href="#home">Home</a></li>
-            <li><a class="nav-link" href="#aboutus">About Me</a></li>
+          <ul class="navbar-nav m-auto navbar-mini">
+            <li>
+                <a class="nav-link active nav-highlight" href="#home">Home</a>
+            </li>
 
-            <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-
-            <li><a class="nav-link" href="#contact">Contact</a></li>
+            <li class=""><a class="nav-link nav-highlight" href="#aboutus">About Me</a></li>
+            
+            <li class=""><a class="nav-link nav-highlight" href="#apps">My Apps</a></li>
+            
+            <li class=""><a class="nav-link nav-highlight" href="#portfolio">Portfolio</a></li>
+            
+            <li class=""><a class="nav-link nav-highlight" href="#contact">Contact</a></li>
+            
           </ul>
           <ul class="social-icons">
             <li><a href="https://www.facebook.com/MikhailSzugalew" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -120,15 +95,10 @@
   <main>
 
     <!-- Home Banner -->
-    <section id="home" class="home-banner-01 bg-no-repeat bg-cover bg-fixed home-bg"
-    style="background-image: url(static/img/bg.jpg">
-        <!--
-          style="background-image: url(static/img/gradientbg2.png);"
-        style="
+    <section id="home" class="home-banner-01 bg-no-repeat bg-cover bg-fixed home-bg" style="
         background: linear-gradient(-45deg, #f1592a, #da2e70, #10a7df, #0ecea1);
         background-size: 200% 200%;
-        animation: gradient 15s ease infinite;"
-      -->
+        animation: gradient 15s ease infinite;">
 
       <div class="container">
         <div class="row full-screen align-items-center">
@@ -138,7 +108,7 @@
               <h5 class="font-alt">Mikhail Szugalew</h5>
               <p><span id="type-it"></span></p>
               <div class="btn-bar">
-                <a href="#portfolio" class="m-btn m-btn-theme m-btn-h-white">My Portfolio</a>
+                <a href="#portfolio" class="m-btn m-btn-theme m-btn-h-black">My Portfolio</a>
               </div>
             </div> <!-- home-text-center -->
           </div> <!-- col -->
@@ -147,51 +117,28 @@
     </section>
     <!-- Home Banner End -->
 
-    <!-- Companies Banner End -->
-    <div class="container">
-      <div class="Comprow">
-        <div class="Compcolumn">
-          <div class="container">
-            <img src="static/img/branches_word_logo.png" alt="GalewGames" style="width: 90%">
-          </div>
-        </div>
-        <div class="Compcolumn">
-          <img src="static/img/navAssistAiLogo.png" alt="NavAssistAI" style="padding-top: 5%">
-        </div>
-        <div class="Compcolumn">
-          <img src="static/img/tensorflow.jpg" alt="Tensorflow" style="width:100%">
-        </div>
-        <div class="Compcolumn">
-          <img src="static/img/arcore.png" alt="ARCore" style="width:100%">
-        </div>
-
-      </div>
-    </div>
-    <!-- Companies Banner End -->
-
     <!-- About us -->
     <section id="aboutus" class="section aboutus-section">
-
       <div class="container">
         <!-- Title -->
         <div class="row align-items-end">
           <div class="col-md-6 text-center">
-            <img src="static/img/profilepic2.jpg" title="" alt="" />
+            <img src="static/img/profilepic2.jpg" title="" alt="" class="profile-picture" />
           </div>
-
           <div class="col-md-6">
             <div class="aboutus-text">
               <span class="font-alt">Nice To Meet You</span>
               <h3 class="font-alt">My name is Mikhail</h3>
-              <p>I’m a first year University of Waterloo Computer Science student who wants to build cool things for the world. 
-                I’ve done projects and built apps with augmented reality, machine learning, and artificial intelligence. 
+              <p>I’m a first year University of Waterloo Computer Science student who wants to build cool things for the
+                world.
+                I’ve done projects and built apps with augmented reality, machine learning, and artificial intelligence.
                 Currently I’m expanding my knowledge base and developing my programming skills.</p>
               <div class="counter-box">
 
               </div> <!-- counter-box -->
               <div class="about-action">
-                <a href="#contact" class="m-btn m-btn-theme">
-                  Contact Me
+                <a href="#experience" class="m-btn m-btn-theme">
+                  Work Experience
                 </a>
               </div>
             </div>
@@ -202,6 +149,179 @@
       </div> <!-- container -->
     </section>
     <!-- About us End -->
+
+    <!-- Apps Section -->
+    <section id="apps" class="section light-gray-bg">
+      <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="section-title-01">
+                <h3 class="font-alt">My app store</h3>
+              </div>
+            </div> <!-- col -->
+          </div> <!-- row -->
+        <div class="app-grid">
+
+
+          <!--Item-->
+                  <a href="https://play.google.com/store/apps/details?id=com.galew.photo_widget&hl=en_US"
+                  target="_blank" class="no-link-underline">
+          <div class="app-grid-item app-highlight">
+            <img src="static/img/app_logos/photowidget.webp" title="" alt="" class="shadow-corners-app app-grid-image">
+          <div class="app-caption">Photo Widget</div>
+          </div>
+                  </a>
+  <!--Item Close-->
+  <!--Item-->
+  <a href="https://play.google.com/store/apps/details?id=com.galew.sticky_note_widget&hl=en_US"
+  target="_blank" class="no-link-underline">
+  <div class="app-grid-item app-highlight">
+    <img src="static/img/app_logos/stickynotes.webp" title="" alt="" class="shadow-corners-app app-grid-image">
+  <div class="app-caption">Sticky Notes Widget</div>
+  </div>
+  </a>
+<!--Item Close-->
+          <!--Item-->
+                  <a href="squircles.html"
+                  target="_blank" class="no-link-underline">
+                    <div class="app-grid-item app-highlight">
+                      <img src="static/img/squircles/icon.png" title="" alt="" class="shadow-corners-app app-grid-image">
+                    <div class="app-caption">WidgetShare</div>
+                    </div>
+                  </a>
+            <!--Item Close-->
+            <!--Item-->
+                  <a href="https://play.google.com/store/apps/details?id=ca.rehablab.braintoolkit"
+                  target="_blank" class="no-link-underline">
+                <div class="app-grid-item app-highlight app-highlight">
+                  <img src="static/img/brainToolKitLogo.png" title="" alt="" class="shadow-corners-app app-grid-image">
+                  <div class="app-caption">Brain Toolkit</div>
+                </div>
+                  </a>
+            <!--Item Close-->
+            <!--Item-->
+                  <a href="https://play.google.com/store/apps/details?id=com.branches.notes_app&hl=en_US"
+                  target="_blank" class="no-link-underline">
+            <div class="app-grid-item app-highlight">
+              <img src="static/img/brancheslogo.png" title="" alt="" class="shadow-corners-app app-grid-image">
+              <div class="app-caption">Branches Organized Notes</div>
+            </div>
+            </a>
+        <!--Item Close-->
+        <!--Item-->
+                  <a href="https://play.google.com/store/apps/details?id=com.GalewGames.Gravity&hl=en_US"
+                  target="_blank" class="no-link-underline">
+        <div class="app-grid-item app-highlight">
+          <img src="static/img/app_logos/gravity.webp" title="" alt="" class="shadow-corners-app app-grid-image">
+          <div class="app-caption">Gravity</div>
+        </div>
+                  </a>
+    <!--Item Close-->
+        <!--Item-->
+                  <a href="https://play.google.com/store/apps/details?id=com.GalewGames.BlockTower&hl=en_US"
+                  target="_blank" class="no-link-underline">
+        <div class="app-grid-item app-highlight">
+          <img src="static/img/app_logos/blocktower.webp" title="" alt="" class="shadow-corners-app app-grid-image">
+          <div class="app-caption">Block Tower</div>
+        </div>
+                  </a>
+    <!--Item Close-->
+    <!--Item-->
+    <a href="https://play.google.com/store/apps/details?id=com.galewgames.towerar&hl=en_US"
+    target="_blank" class="no-link-underline">
+    <div class="app-grid-item app-highlight">
+      <img src="static/img/app_logos/towerar.webp" title="" alt="" class="shadow-corners-app app-grid-image">
+      <div class="app-caption">Tower AR</div>
+    </div>
+    </a>
+<!--Item Close-->
+        </div>
+      </div>
+      </section>
+      
+
+
+ <!-- Experience Section -->
+ <section id="experience" class="section work-bg">
+  <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title-01">
+            <h3 class="font-alt">Work Experience</h3>
+          </div>
+        </div> <!-- col -->
+      </div> <!-- row -->
+
+
+
+    <div class="accordion">
+      <section class="accordion-item work-box">
+        <div class="work-bubble work-active shadow-corners-same-level">
+        <div class="work-buble-title">Software Developer</div>
+          <div class="work-buble-subtitle">Royal Bank of Canada, May - Aug 2021</div>
+          <div class="accordion-item-content">
+            <ul>
+            <li>Planned and implemented a new API for a Springboot application</li>
+            <li>Deployed an application to a Kubernetes cluster using Openshift and configured HTTPS security</li>
+            <li>Worked with users to increase adoption of new API functionality</li>
+              <li>Conducted an exploratory data analysis into different application metrics and KPIs such as CPU usage and byte rates</li>
+              <li>Report on the feasibility of 5 machine learning algorithms for anomaly detection on seasonal data</li>
+              <li>Implemented a facebook prophet machine learning model to detect metric anomalies in time series data</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="accordion-item work-box">
+        <div class="work-bubble shadow-corners-same-level">
+        <div class="work-buble-title">Innovation Developer</div>
+          <div class="work-buble-subtitle">Royal Bank of Canada, Summer 2020</div>
+          <div class="accordion-item-content">
+            <ul>
+            <li>Leveraged Angular to develop 14 pages and 33 components in 8 weeks for an internal forum website.</li>
+            <li>Worked remotely in an Agile environment as a scrum master. </li>
+              <li>Used Git for virtual project management. Held weekly retrospectives and code reviews for our sprints.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="accordion-item work-box">
+        <div class="work-bubble shadow-corners-same-level">
+        <div class="work-buble-title">Android Developer</div>
+          <div class="work-buble-subtitle">Brain Tool Kit, Jan - Apr 2020</div>
+          <div class="accordion-item-content">
+            <ul>
+            <li>Developed a health app to train the vestibulo-ocular reflex of concussion victims.</li>
+            <li>Used wireframes to construct 7 visual exercises using Android Studio and Java.</li>
+            <li>Handled submission to Google Play Console and publishing to the Play Store</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="accordion-item work-box">
+        <div class="work-bubble shadow-corners-same-level">
+        <div class="work-buble-title">Innovation Developer</div>
+          <div class="work-buble-subtitle">Royal Bank of Canada, Summer 2019</div>
+          <div class="accordion-item-content">
+            <ul>
+            <li>Revamped the UI of an internal application used to track the performance of 1.7k+ co-op students.</li>
+            <li>Implemented front-end design updates using Angular, HTML, CSS, TypeScript, and Spring.</li>
+            <li>Captured development progress through project presentations at weekly demo days.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+  </div>
+
+  <div class="accordion" style="height: 0px; width: 0px;">
+    <section class="" style="visibility: hidden; pointer-events: none; display: inline-block; height: 0px; width: 0px;">
+      <p style="visibility: hidden; pointer-events: none;">Section 3</p>
+  </section>
+    </div>
+
+      </div>
+      </section>
+
+
 
 
 
@@ -222,7 +342,8 @@
 
         <div class="portfolio-filter m-30px-b">
           <ul class="filter">
-            <li class="active" data-filter="*">All</li>
+            <li data-filter="*">All</li>
+            <li class="active" data-filter=".highlights">Highlights</li>
             <li data-filter=".apps">Apps</li>
             <li data-filter=".presentations">Presentations</li>
             <li data-filter=".projects">Projects</li>
@@ -232,15 +353,16 @@
 
         <div class="portfolio-content">
           <ul class="portfolio-cols portfolio-cols-3">
+
             <!--Portfolio Item-->
-            <li class="portfolio-item">
-              <div class="portfolio-col portfolio-hover-01">
+            <li class="portfolio-item highlights">
+              <div class="portfolio-col portfolio-hover-01 corners-portfolio">
                 <div class="portfolio-img">
                   <a href="https://docs.google.com/presentation/d/e/2PACX-1vQ_aUE7zZwgll9_6xazm7hNeIlU6E2CGBDByYM8CVmNDavNCUD4W02cmZRU-ynCCp_MwLjkD_kcGqk5/pub?start=false&loop=false&delayms=3000"
                     target="_blank">
                     <!--Link-->
                     <div class="PortfolioOverlayContainer">
-                      <img src="static/img/ResumeImage.png" title="" alt="">
+                      <img src="static/img/ResumeImage.png" title="" alt="" class="rounded-corners-portfolio-image">
                       <div class="overlay">
                         <div class="portfolio-info">
                           <h5>Résumé</h5>
@@ -255,13 +377,13 @@
             </li> <!-- col -->
             <!--Portfolio Item Close-->
             <!--Portfolio Item-->
-            <li class="portfolio-item presentations">
-              <div class="portfolio-col portfolio-hover-01">
+            <li class="portfolio-item presentations highlights">
+              <div class="portfolio-col portfolio-hover-01 corners-portfolio">
                 <div class="portfolio-img">
                   <a href="https://www.youtube.com/watch?v=TaHZm5NJ74g" target="_blank">
                     <!--Link-->
                     <div class="PortfolioOverlayContainer">
-                      <img src="static/img/TensorFlowWorldOnStage.png" title="" alt="">
+                      <img src="static/img/TensorFlowWorldOnStage.png" title="" alt="" class="rounded-corners-portfolio-image">
                       <div class="overlay">
                         <div class="portfolio-info">
                           <h5>TensorFlow World 2019</h5>
@@ -276,14 +398,14 @@
             </li> <!-- col -->
             <!--Portfolio Item Close-->
             <!--Portfolio Item-->
-            <li class="portfolio-item apps">
-              <div class="portfolio-col portfolio-hover-01">
+            <li class="portfolio-item apps highlights">
+              <div class="portfolio-col portfolio-hover-01 corners-portfolio">
                 <div class="portfolio-img">
                   <a href="https://play.google.com/store/apps/details?id=com.branches.notes_app&hl=en_US"
                     target="_blank">
                     <!--Link-->
                     <div class="PortfolioOverlayContainer">
-                      <img src="static/img/brancheslogo.png" title="" alt="">
+                      <img src="static/img/brancheslogo.png" title="" alt="" class="rounded-corners-portfolio-image">
                       <div class="overlay">
                         <div class="portfolio-info">
                           <h5>Branches - Organized Notes</h5>
@@ -298,14 +420,14 @@
             </li> <!-- col -->
             <!--Portfolio Item Close-->
             <!--Portfolio Item-->
-            <li class="portfolio-item articles">
-              <div class="portfolio-col portfolio-hover-01">
+            <li class="portfolio-item articles highlights">
+              <div class="portfolio-col portfolio-hover-01 corners-portfolio">
                 <div class="portfolio-img">
                   <a href="https://medium.com/@mik.szuga/an-introduction-to-machine-learning-the-magic-behind-artificial-intelligence-ac32d66add59"
                     target="_blank">
                     <!--Link-->
                     <div class="PortfolioOverlayContainer">
-                      <img src="static/img/MLArticle.PNG" title="" alt="">
+                      <img src="static/img/MLArticle.PNG" title="" alt="" class="rounded-corners-portfolio-image">
                       <div class="overlay">
                         <div class="portfolio-info">
                           <h5>An Intro To Machine Learning</h5>
@@ -322,12 +444,12 @@
 
             <!--Portfolio Item-->
             <li class="portfolio-item apps">
-              <div class="portfolio-col portfolio-hover-01">
+              <div class="portfolio-col portfolio-hover-01 corners-portfolio">
                 <div class="portfolio-img">
                   <a href="blocktower.html" target="_blank">
                     <!--Link-->
                     <div class="PortfolioOverlayContainer">
-                      <img src="static/img/blockTowerInGameImage.png" title="" alt="">
+                      <img src="static/img/blockTowerInGameImage.png" title="" alt="" class="rounded-corners-portfolio-image">
                       <div class="overlay">
                         <div class="portfolio-info">
                           <h5>AR GAME</h5>
@@ -343,16 +465,17 @@
             <!--Portfolio Item Close-->
             <!--Portfolio Item-->
             <li class="portfolio-item apps">
-              <div class="portfolio-col portfolio-hover-01">
+              <div class="portfolio-col portfolio-hover-01 corners-portfolio">
                 <div class="portfolio-img">
                   <a href="towerar.html" target="_blank">
                     <!--Link-->
                     <div class="PortfolioOverlayContainer">
-                      <img src="static/img/towerarInGameImage.png" title="" alt="">
+                      <img src="static/img/towerarInGameImage.png" title="" alt="" class="rounded-corners-portfolio-image">
                       <div class="overlay">
                         <div class="portfolio-info">
                           <h5>AR GAME</h5>
-                          <span>This was my very first app! It uses Augmented Reality to create a fun experience for the user</span>
+                          <span>This was my very first app! It uses Augmented Reality to create a fun experience for the
+                            user</span>
                         </div>
                         <!--Info-->
                       </div><!-- overlay -->
@@ -363,13 +486,13 @@
             </li> <!-- col -->
             <!--Portfolio Item Close-->
             <!--Portfolio Item-->
-            <li class="portfolio-item projects">
-              <div class="portfolio-col portfolio-hover-01">
+            <li class="portfolio-item projects highlights">
+              <div class="portfolio-col portfolio-hover-01 corners-portfolio">
                 <div class="portfolio-img">
                   <a href="NavAssistAi.html" target="_blank">
                     <!--Link-->
                     <div class="PortfolioOverlayContainer">
-                      <img src="static/img/softwareWalk.png" title="" alt="">
+                      <img src="static/img/softwareWalk.png" title="" alt="" class="rounded-corners-portfolio-image">
                       <div class="overlay">
                         <div class="portfolio-info">
                           <h5>NavAssistAi</h5>
@@ -385,13 +508,13 @@
             </li> <!-- col -->
             <!--Portfolio Item Close-->
             <!--Portfolio Item-->
-            <li class="portfolio-item apps">
-              <div class="portfolio-col portfolio-hover-01">
+            <li class="portfolio-item apps highlights">
+              <div class="portfolio-col portfolio-hover-01 corners-portfolio">
                 <div class="portfolio-img">
                   <a href="squircles.html" target="_blank">
                     <!--Link-->
                     <div class="PortfolioOverlayContainer">
-                      <img src="static/img/squircles/icon_w_shadow.png" title="" alt="">
+                      <img src="static/img/squircles/icon_w_shadow.png" title="" alt="" class="rounded-corners-portfolio-image">
                       <div class="overlay">
                         <div class="portfolio-info">
                           <h5>Squircles - Shareable Widgets</h5>
@@ -407,12 +530,12 @@
             <!--Portfolio Item Close-->
             <!--Portfolio Item-->
             <li class="portfolio-item presentations">
-              <div class="portfolio-col portfolio-hover-01">
+              <div class="portfolio-col portfolio-hover-01 corners-portfolio">
                 <div class="portfolio-img">
                   <a href="https://youtu.be/7-VyBwpMNIY" target="_blank">
                     <!--Link-->
                     <div class="PortfolioOverlayContainer">
-                      <img src="static/img/howimusingaitohelptheblindvideoimage.png" title="" alt="">
+                      <img src="static/img/howimusingaitohelptheblindvideoimage.png" title="" alt="" class="rounded-corners-portfolio-image">
                       <div class="overlay">
                         <div class="portfolio-info">
                           <h5>NavAssistAI Video</h5>
@@ -428,13 +551,13 @@
             <!--Portfolio Item Close-->
             <!--Portfolio Item-->
             <li class="portfolio-item articles">
-              <div class="portfolio-col portfolio-hover-01">
+              <div class="portfolio-col portfolio-hover-01 corners-portfolio">
                 <div class="portfolio-img">
                   <a href="https://medium.com/@mik.szuga/how-i-used-ai-to-help-with-blind-navigation-f38851daab35"
                     target="_blank">
                     <!--Link-->
                     <div class="PortfolioOverlayContainer">
-                      <img src="static/img/navassistaiarticleimage.png" title="" alt="">
+                      <img src="static/img/navassistaiarticleimage.png" title="" alt="" class="rounded-corners-portfolio-image">
                       <div class="overlay">
                         <div class="portfolio-info">
                           <h5>NavAssistAI Article</h5>
@@ -450,12 +573,12 @@
             <!--Portfolio Item Close-->
             <!--Portfolio Item-->
             <li class="portfolio-item apps">
-              <div class="portfolio-col portfolio-hover-01">
+              <div class="portfolio-col portfolio-hover-01 corners-portfolio">
                 <div class="portfolio-img">
                   <a href="https://play.google.com/store/apps/details?id=com.GalewGames.Gravity" target="_blank">
                     <!--Link-->
                     <div class="PortfolioOverlayContainer">
-                      <img src="static/img/gravityarlogo.png" title="" alt="">
+                      <img src="static/img/gravityarlogo.png" title="" alt="" class="rounded-corners-portfolio-image">
                       <div class="overlay">
                         <div class="portfolio-info">
                           <h5>AR GAME</h5>
@@ -471,12 +594,12 @@
             <!--Portfolio Item Close-->
             <!--Portfolio Item-->
             <li class="portfolio-item projects">
-              <div class="portfolio-col portfolio-hover-01">
+              <div class="portfolio-col portfolio-hover-01 corners-portfolio">
                 <div class="portfolio-img">
                   <a href="https://github.com/Szugalew/BreastCancerDetection" target="_blank">
                     <!--Link-->
                     <div class="PortfolioOverlayContainer">
-                      <img src="static/img/breastcancergithub.jpg" title="" alt="">
+                      <img src="static/img/breastcancergithub.jpg" title="" alt="" class="rounded-corners-portfolio-image">
                       <div class="overlay">
                         <div class="portfolio-info">
                           <h5>Neural Networks for Breast Cancer Diagnosis</h5>
@@ -492,12 +615,12 @@
             <!--Portfolio Item Close-->
             <!--Portfolio Item-->
             <li class="portfolio-item presentations">
-              <div class="portfolio-col portfolio-hover-01">
+              <div class="portfolio-col portfolio-hover-01 corners-portfolio">
                 <div class="portfolio-img">
                   <a href="https://youtu.be/6aPZwV9nZXY" target="_blank">
                     <!--Link-->
                     <div class="PortfolioOverlayContainer">
-                      <img src="static/img/breastcancerdetectionvideothumbnail.jpg" title="" alt="">
+                      <img src="static/img/breastcancerdetectionvideothumbnail.jpg" title="" alt="" class="rounded-corners-portfolio-image">
                       <div class="overlay">
                         <div class="portfolio-info">
                           <h5>Breast Cancer Biopsy Classification</h5>
@@ -513,16 +636,18 @@
             <!--Portfolio Item Close-->
             <!--Portfolio Item-->
             <li class="portfolio-item apps">
-              <div class="portfolio-col portfolio-hover-01">
+              <div class="portfolio-col portfolio-hover-01 corners-portfolio">
                 <div class="portfolio-img">
-                  <a href="https://play.google.com/store/apps/details?id=ca.rehablab.braintoolkit&hl=en_US" target="_blank">
+                  <a href="https://play.google.com/store/apps/details?id=ca.rehablab.braintoolkit&hl=en_US"
+                    target="_blank">
                     <!--Link-->
                     <div class="PortfolioOverlayContainer">
-                      <img src="static/img/brainToolKitLogo.png" title="" alt="">
+                      <img src="static/img/brainToolKitLogo.png" title="" alt="" class="rounded-corners-portfolio-image">
                       <div class="overlay">
                         <div class="portfolio-info">
                           <h5>Brain Tool Kit</h5>
-                          <span>An app to train the  vestibulo-ocular reflex of concussion victims through visual exercises. Built for a Toronto rehab clinic.
+                          <span>An app to train the vestibulo-ocular reflex of concussion victims through visual
+                            exercises. Built for a Toronto rehab clinic.
                           </span>
                         </div>
                         <!--Info-->
@@ -535,12 +660,12 @@
             <!--Portfolio Item Close-->
             <!--Portfolio Item-->
             <li class="portfolio-item presentations">
-              <div class="portfolio-col portfolio-hover-01">
+              <div class="portfolio-col portfolio-hover-01 corners-portfolio">
                 <div class="portfolio-img">
                   <a href="https://youtu.be/KqKyeIkHTmQ" target="_blank">
                     <!--Link-->
                     <div class="PortfolioOverlayContainer">
-                      <img src="static/img/geneticalgorithmvideothumbnail.jpg" title="" alt="">
+                      <img src="static/img/geneticalgorithmvideothumbnail.jpg" title="" alt="" class="rounded-corners-portfolio-image">
                       <div class="overlay">
                         <div class="portfolio-info">
                           <h5>The Genetic Algorithm</h5>
@@ -555,14 +680,14 @@
             </li> <!-- col -->
             <!--Portfolio Item Close-->
             <!--Portfolio Item-->
-            <li class="portfolio-item articles">
-              <div class="portfolio-col portfolio-hover-01">
+            <li class="portfolio-item articles highlights">
+              <div class="portfolio-col portfolio-hover-01 corners-portfolio">
                 <div class="portfolio-img">
                   <a href="https://medium.com/@mik.szuga/an-introduction-to-transfer-learning-91bb562ac92f"
                     target="_blank">
                     <!--Link-->
                     <div class="PortfolioOverlayContainer">
-                      <img src="static/img/transferlearning.png" title="" alt="">
+                      <img src="static/img/transferlearning.png" title="" alt="" class="rounded-corners-portfolio-image">
                       <div class="overlay">
                         <div class="portfolio-info">
                           <h5>Transfer Learning</h5>
@@ -576,15 +701,15 @@
                 </div><!-- Image -->
               </div> <!-- Portfolio -->
             </li> <!-- col -->
-            <!--Portfolio Item Close--><!--Portfolio Item-->
+            <!--Portfolio Item Close-->
+            <!--Portfolio Item-->
             <li class="portfolio-item apps">
-              <div class="portfolio-col portfolio-hover-01">
+              <div class="portfolio-col portfolio-hover-01 corners-portfolio">
                 <div class="portfolio-img">
-                  <a href="https://github.com/Szugalew/TrafficLightDetectorAndroidAppDownload"
-                    target="_blank">
+                  <a href="https://github.com/Szugalew/TrafficLightDetectorAndroidAppDownload" target="_blank">
                     <!--Link-->
                     <div class="PortfolioOverlayContainer">
-                      <img src="static/img/navassistappimage.png" title="" alt="">
+                      <img src="static/img/navassistappimage.png" title="" alt="" class="rounded-corners-portfolio-image">
                       <div class="overlay">
                         <div class="portfolio-info">
                           <h5>NavAssistAI App</h5>
@@ -600,13 +725,13 @@
             <!--Portfolio Item Close-->
             <!--Portfolio Item-->
             <li class="portfolio-item articles">
-              <div class="portfolio-col portfolio-hover-01">
+              <div class="portfolio-col portfolio-hover-01 corners-portfolio">
                 <div class="portfolio-img">
                   <a href="https://medium.com/@mik.szuga/the-genetic-algorithm-explained-with-intelligent-dots-319088f22d68"
                     target="_blank">
                     <!--Link-->
                     <div class="PortfolioOverlayContainer">
-                      <img src="static/img/AIdna1.png" title="" alt="">
+                      <img src="static/img/AIdna1.png" title="" alt="" class="rounded-corners-portfolio-image">
                       <div class="overlay">
                         <div class="portfolio-info">
                           <h5>Genetic Algorithm</h5>
@@ -622,13 +747,13 @@
             <!--Portfolio Item Close-->
             <!--Portfolio Item-->
             <li class="portfolio-item articles">
-              <div class="portfolio-col portfolio-hover-01">
+              <div class="portfolio-col portfolio-hover-01 corners-portfolio">
                 <div class="portfolio-img">
                   <a href="https://medium.com/@mik.szuga/how-i-used-ai-to-detect-breast-cancer-in-less-than-100-lines-of-code-6a0006a3c945"
                     target="_blank">
                     <!--Link-->
                     <div class="PortfolioOverlayContainer">
-                      <img src="static/img/breastcancer.jpg" title="" alt="">
+                      <img src="static/img/breastcancer.jpg" title="" alt="" class="rounded-corners-portfolio-image">
                       <div class="overlay">
                         <div class="portfolio-info">
                           <h5>Breast Cancer Detection</h5>
@@ -646,12 +771,12 @@
 
             <!--Portfolio Item-->
             <li class="portfolio-item projects">
-              <div class="portfolio-col portfolio-hover-01">
+              <div class="portfolio-col portfolio-hover-01 corners-portfolio">
                 <div class="portfolio-img">
                   <a href="https://devpost.com/software/mpbeats" target="_blank">
                     <!--Link-->
                     <div class="PortfolioOverlayContainer">
-                      <img src="static/img/mpbeats.jpg" title="" alt="">
+                      <img src="static/img/mpbeats.jpg" title="" alt="" class="rounded-corners-portfolio-image">
                       <div class="overlay">
                         <div class="portfolio-info">
                           <h5>MPBeats</h5>
@@ -694,7 +819,7 @@
 
         <div class="row">
           <div class="col-md-12 col-lg-4">
-            <div class="contact-info">
+            <div class="contact-info shadow-corners">
               <div class="ci-row">
                 <i class="theme-bg ti-email"></i>
                 <label>For Information</label>
@@ -707,7 +832,7 @@
 
           <!-- Begin Mailchimp Signup Form -->
           <div class="col-md-12 col-lg-8">
-            <div class="contact-form">
+            <div class="contact-form shadow-corners">
               <h2>Contact Me</h2>
 
               <form method="post" action="https://formspree.io/mik.szuga@gmail.com ">
@@ -755,59 +880,6 @@
             </div>
           </div>
         </div>
-
-        <!--End mc_embed_signup-->
-
-        <!--           
-      <div class="col-md-12 col-lg-8">
-        <div class="contact-form">
-                
-
-                <form method="post" action="https://large-swift.prod.with-datafire.io/contact">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input name="name" placeholder="Name" class="form-control" type="text">
-                        <span class="input-focus-effect"></span>
-                      </div>
-                    </div>
-                      
-                    <div class="emailFakeEntry">
-                      <div class="form-group">
-                        <input name="emailAddress" placeholder="Email" class="form-control" type="text">
-                        <span class="input-focus-effect"></span>
-                      </div>
-                    </div>
-                      
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input name="em" placeholder="Email" class="form-control" type="text">
-                        <span class="input-focus-effect"></span>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <input name="subject" placeholder="Subject" class="form-control" type="text">
-                        <span class="input-focus-effect"></span>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <textarea name="message" placeholder="Write your message here" rows="3" class="form-control"></textarea>
-                        <span class="input-focus-effect"></span>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="send">
-                        <button class="m-btn m-btn-theme"><i class="fa fa-envelope-o" aria-hidden="true"></i>Send</button>
-                      </div>
-                      </div>
-                    </div>
-                </form>
-
-            </div>
-      </div>
--->
       </div>
       </div>
     </section>
@@ -855,8 +927,10 @@
   <!-- Particles
     <script src="static/plugin/particles/particles.min.js"></script>
   <script src="static/plugin/particles/particles-app.js"></script>
+  <script src="static/js/images-loaded.js"></script>
   -->
   <!-- custom -->
+  <script src="static/js/images-loaded.js"></script>
   <script src="static/js/custom.js"></script>
 
 
