@@ -27287,7 +27287,7 @@ s.d=400},
 $S:0}
 A.ut.prototype={
 R(a){var s=null
-return new A.ni(B.dh,B.e9,B.ea,B.c9,s,B.c0,s,A.a([A.OU(A.Wp(new A.o9(A.a8f(s,s,new A.mZ("image.png",s,s)),B.tk,s),B.c4,new A.wi()),100,100),B.eJ,B.HE,B.eJ,B.BE,B.eJ,B.BF],t.G),s)}}
+return new A.ni(B.dh,B.e9,B.ea,B.c9,s,B.c0,s,A.a([A.OU(A.Wp(new A.o9(A.a8f(s,s,new A.mZ("assets/image.png",s,s)),B.tk,s),B.c4,new A.wi()),100,100),B.eJ,B.HE,B.eJ,B.BE,B.eJ,B.BF],t.G),s)}}
 A.wi.prototype={
 os(a){var s,r,q=a.a,p=a.b,o=$.ad().cv(),n=0.5*q,m=p*0.35
 o.hN(n,m)
